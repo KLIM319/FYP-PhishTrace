@@ -1,0 +1,5 @@
+Timestamp,Dataset_Name,Accuracy,Status
+2026-04-05 19:47:30,Enron.csv,98.03%,Success
+2026-04-05 19:48:07,eduphish_dataset.csv,97.43%,Success
+2026-04-05 19:48:35,phishing_legit_dataset_KD_10000.csv,100.00%,Success
+2026-04-05 19:48:46,SpamAssasin.csv,96.64%,Success
