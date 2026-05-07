@@ -14,7 +14,7 @@ def deploy_traceback(app):
         messagebox.showerror("Deployment Failed", "No active target identified in the Threat Feed.")
         return
 
-    # 🚀 STRICT MANUAL INFRASTRUCTURE CHECK
+    # STRICT MANUAL INFRASTRUCTURE CHECK
     is_online, current_url = server_handler.check_status()
     
     if not is_online or current_url == "Offline":
@@ -31,7 +31,7 @@ def deploy_traceback(app):
         )
         return
 
-    NGROK_URL = current_url # Use the already running Ngrok link!
+    TUNNEL_URL = current_url # Use the already running Ngrok link!
 
     # 🧹 AI STRATEGY CLEANUP
     raw_text = app.ai_box.get("1.0", "end")
@@ -43,8 +43,8 @@ def deploy_traceback(app):
 
     # Replace placeholder with a context-aware hyperlink
     encoded_target = urllib.parse.quote(app.current_target_email)
-    TRAP_LINK = f"{NGROK_URL}/trap?target={encoded_target}"
-    PIXEL_LINK = f"{NGROK_URL}/trace_pixel?target={encoded_target}"
+    TRAP_LINK = f"{TUNNEL_URL}/trap?target={encoded_target}"
+    PIXEL_LINK = f"{TUNNEL_URL}/trace_pixel?target={encoded_target}"
 
     # 🚀 THE FIX: Mask the raw URL with a professional clickable HTML tag
     MASKED_LINK = f'<a href="{TRAP_LINK}" style="color: #0078D4; text-decoration: underline; font-weight: bold;">Here</a>'

@@ -2,7 +2,6 @@ import os
 import csv
 import re
 import threading
-from numpy import imag
 import tkintermapview
 import json
 
@@ -1886,7 +1885,7 @@ class PhishTraceApp(ctk.CTk):
             if not target_traces:
 
                 if hasattr(self, 'cam_label'):
-                    self.cam_label.configure(image="", text="[ No Camera Data ]", text_color="#A0B0C0")
+                    self.cam_label.configure(image=None, text="[ No Camera Data ]", text_color="#A0B0C0")
 
                 if hasattr(self, 'intercept_box'):
                     self.intercept_box.configure(state="normal")
@@ -1919,12 +1918,19 @@ class PhishTraceApp(ctk.CTk):
             cam_file = last_trace.get('camera_file')
             if hasattr(self, 'cam_label'):
                 if cam_file and os.path.exists(cam_file):
-                    # Load the image using PIL and format it for CustomTkinter
-                    ctk.CTkImage(light_image=Image.open(cam_file), dark_image=Image.open(cam_file), size=(280, 200))
-                    self.cam_label.configure(image=imag, text="")
+                    # 1. Load the image using PIL
+                    pil_img = Image.open(cam_file)
+                    # 2. Assign the CTkImage to a variable
+                    ctk_img = ctk.CTkImage(light_image=pil_img, dark_image=pil_img, size=(280, 200))
+                    # 3. Configure the label with the variable
+                    self.cam_label.configure(image=ctk_img, text="")
+                    # 4. CRITICAL: Save a reference so Python's Garbage Collector doesn't delete it!
+                    self.cam_label.image = ctk_img
                 else:
                     error_msg = last_trace.get('camera_error', '[ No Camera Data ]')
-                    self.cam_label.configure(image="", text=error_msg, text_color="#E57373")
+                    # Set image to None (not empty string) to clear it properly
+                    self.cam_label.configure(image=None, text=error_msg, text_color="#E57373")
+                    self.cam_label.image = None
             
             if hasattr(self, 'intercept_box'):
                 self.intercept_box.configure(state="normal")

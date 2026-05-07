@@ -349,8 +349,4 @@ def fetch_and_analyze_inbox(username, max_emails=5):
             "confidence": confidence_score
         })
 
-    
-
-    
-
     return processed_emails
