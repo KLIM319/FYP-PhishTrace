@@ -1,0 +1,42 @@
+Required System Applications
+Because PhishTrace uses localized AI and reverse-proxy networks to bypass filters, you cannot just use pip. You must install these external applications on your operating system:
+
+A. Ollama (For Local Generative AI)
+Since you are using a local LLM for data privacy, you need the Ollama daemon to run the models on your machine's hardware.
+
+Download and install from: https://ollama.com/download
+
+Once installed, open your command prompt/terminal and pull the specific model your code uses:
+
+Bash
+ollama run dolphin-mistral
+(Keep Ollama running in the background while using PhishTrace).
+
+B. Node.js (Prerequisite for Tunnelmole)
+Tunnelmole runs on JavaScript/Node environments.
+
+Download and install Node.js from: https://nodejs.org/
+
+Verify installation in your terminal: node -v and npm -v
+
+C. Tunnelmole (For Reverse-Proxy Routing)
+Once Node.js is installed, you need to install Tunnelmole globally on your system so your Python subprocess script can trigger it.
+
+Open your terminal and run:
+
+Bash
+npm install -g tunnelmole
+Quick Start Checklist for Examiners/Users:
+If you are adding an Installation Guide to your FYP Appendices or GitHub Repo, you can summarize it like this:
+
+Install Python 3.10+ and Node.js.
+
+Run pip install -r requirements.txt.
+
+Install Ollama and run ollama run dolphin-mistral.
+
+Install Tunnelmole via npm install -g tunnelmole.
+
+Place your Google credentials.json in the root directory.
+
+Run python main.py to launch the PhishTrace GUI.

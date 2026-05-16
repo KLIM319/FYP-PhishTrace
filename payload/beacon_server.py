@@ -87,3 +87,5 @@ def capture_data():
 if __name__ == '__main__':
     print("[+] PhishTrace Multi-Stage Beacon Server Active...")
     app.run(host='0.0.0.0', port=5000, debug=False)
+
+    

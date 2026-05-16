@@ -61,3 +61,4 @@ def _fallback_template(sender, subject):
         f"Thanks."
     )
     return reply
+
