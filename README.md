@@ -3,7 +3,7 @@
 PhishTrace is a cybersecurity investigation platform designed to assist analysts in analyzing suspicious emails, identifying phishing campaigns, generating AI-assisted responses, and collecting investigation telemetry within a controlled environment.
 The project combines Digital Forensics, Machine Learning, Artificial Intelligence, and Security Automation into a single platform that helps investigators understand attacker behavior and improve phishing investigation workflows.
 
-=============================================================================================
+=====================================================================================
 
 ### Features
 **Email Analysis**
@@ -43,7 +43,7 @@ Automated PDF forensic report generation
 Investigation evidence documentation
 Case export functionality
 
-=============================================================================================
+=====================================================================================
 
 ### Screenshots
 
@@ -68,12 +68,12 @@ Case export functionality
 **PDF Report Generation**
 <img width="1047" height="398" alt="image" src="https://github.com/user-attachments/assets/133eef35-ab88-4b02-8f32-79931d2ebd12" />
 
-=============================================================================================
+=====================================================================================
 
 ### Educational Purpose
 This project was developed as a Final Year Project for academic research and cybersecurity education.
 
-=============================================================================================
+=====================================================================================
 
 ### Author
 **Lim Kai Lun**
