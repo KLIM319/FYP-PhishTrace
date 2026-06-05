@@ -1,44 +1,44 @@
 # PhishTrace #
-**AI-Powered Reverse-Traceback Investigation Platform for Email Threat Analysis** /n
+**AI-Powered Reverse-Traceback Investigation Platform for Email Threat Analysis**\
 PhishTrace is a cybersecurity investigation platform designed to assist analysts in analyzing suspicious emails, identifying phishing campaigns, generating AI-assisted responses, and collecting investigation telemetry within a controlled environment.
 The project combines Digital Forensics, Machine Learning, Artificial Intelligence, and Security Automation into a single platform that helps investigators understand attacker behavior and improve phishing investigation workflows.
 
 =====================================================================================
 
 ### Features
-**Email Analysis**
+**Email Analysis**\
 Email header extraction and analysis
 Metadata investigation
 Sender and routing analysis
 Suspicious email identification
 
-**Machine Learning Detection**
+**Machine Learning Detection**\
 TF-IDF feature extraction
 Random Forest classification
 Phishing email prediction
 Model training and evaluation dashboard
 
-**AI-Assisted Investigation**
+**AI-Assisted Investigation**\
 Local LLM integration using Ollama
 Context-aware response generation
 Automated traceback strategy generation
 Privacy-preserving local AI processing
 
-**Telemetry Collection**
+**Telemetry Collection**\
 Tracking link generation
 Beacon monitoring
 Target interaction tracking
 IP and geolocation collection
 System information retrieval
 
-**Investigation Dashboard**
+**Investigation Dashboard**\
 CustomTkinter GUI
 Live investigation monitoring
 Active tracking radar
 Real-time telemetry visualization
 Investigation history management
 
-**Reporting**
+**Reporting**\
 Automated PDF forensic report generation
 Investigation evidence documentation
 Case export functionality
@@ -76,8 +76,8 @@ This project was developed as a Final Year Project for academic research and cyb
 =====================================================================================
 
 ### Author
-**Lim Kai Lun**
+**Lim Kai Lun**\
 Asia Pacific University of Technology & Innovation
 
-LinkedIn: www.linkedin.com/in/klim04
+LinkedIn: www.linkedin.com/in/klim04 \
 GitHub: https://github.com/KLIM319
