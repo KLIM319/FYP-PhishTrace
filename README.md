@@ -1,5 +1,5 @@
 # PhishTrace #
-**AI-Powered Reverse-Traceback Investigation Platform for Email Threat Analysis**
+**AI-Powered Reverse-Traceback Investigation Platform for Email Threat Analysis** /n
 PhishTrace is a cybersecurity investigation platform designed to assist analysts in analyzing suspicious emails, identifying phishing campaigns, generating AI-assisted responses, and collecting investigation telemetry within a controlled environment.
 The project combines Digital Forensics, Machine Learning, Artificial Intelligence, and Security Automation into a single platform that helps investigators understand attacker behavior and improve phishing investigation workflows.
 
